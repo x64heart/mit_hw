@@ -19,4 +19,3 @@ for item in arr:
                 consonants_count += 1
         print(f"{item} , {vowels_count} гласных, {consonants_count} согласных")
     counter += 1
-print(arr)
