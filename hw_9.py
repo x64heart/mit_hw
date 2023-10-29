@@ -17,10 +17,10 @@ for item in arr:
         for c in item:
             if c in vowels:
                 vowels_count += 1
-                vowels_total += 1
             else:
                 consonants_count += 1
-                consonants_total += 1
+        vowels_total += vowels_count
+        consonants_total += consonants_count
         print(f"{item} , {vowels_count} гласных, {consonants_count} согласных")
     counter += 1
 print(f"Всего гласных :{vowels_total}, всего согласных {consonants_total}")
