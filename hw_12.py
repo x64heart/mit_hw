@@ -17,7 +17,7 @@ def func(n: int):
         lambda x: x * x,
         lambda x: 2 * x
     ]
-    if step < 0 or step > len(ranges):
+    if step < 0 or step >= len(ranges):
         return None
     return ranges[step](n)
 
