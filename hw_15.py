@@ -4,7 +4,6 @@ sep = ';'
 cart = []
 s = input(f"Введите название и стоимость через {sep}")
 while s != 'стоп':
-    s = input(f"Введите название и стоимость через {sep}")
     chunks = s.split(sep)
     if len(chunks) != 2:
         continue
@@ -15,6 +14,8 @@ while s != 'стоп':
         'name': name,
         'price': int(price)
     })
+    s = input(f"Введите название и стоимость через {sep}")
+
 with open('cart.json', 'tw', encoding='utf-8') as f:
     json.dump(cart, f)
 
