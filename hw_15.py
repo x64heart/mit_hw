@@ -21,4 +21,4 @@ with open('cart.json', 'tw', encoding='utf-8') as f:
 with open('cart.json', 'tr', encoding='utf-8') as f:
     items = json.load(f)
     total_price = sum([int(x['price']) for x in items if 'price' in x])
-    print(f"стоимость всех покупок за день: {total_price}")
+    print(f"Стоимость всех покупок за день: {total_price}")
